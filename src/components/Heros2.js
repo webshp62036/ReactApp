@@ -12,11 +12,11 @@ function Heros2(props){
    }
     return(
         <div className="main-div">
-            <div className="md:grid md:grid-cols-2 p-20">
-              <div className=" md:ml-32  md:p-10 md:w-3/4 p-2">
+            <div className="md:grid md:grid-cols-2 p-10">
+              <div className=" md:ml-32  md:p-10 md:w-1/ p-2">
                   <img src={props.link} alt="heros" width="400" height="auto"/>
               </div>
-              <div className=" items-center md:p-10 mt-5  md:w-3/4">
+              <div className=" items-center md:p-10 mt-5  md:w-1/2">
                   <h2 className="font-bold text-xl -tracking-wide font-[Poppins]">{props.title}</h2><br/>
                   <p className="font-[Poppins]">{props.content}</p>
                     <div className="flex">
