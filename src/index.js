@@ -2,7 +2,8 @@
 import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
+import About from './About';
 
 ReactDOM.render(
-  <App/>,document.getElementById("root")
+  <About/>,document.getElementById("root")
 )

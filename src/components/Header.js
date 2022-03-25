@@ -18,6 +18,7 @@ function Header(){
           {name:"Careers",link:"Careers"},
         ];
       let[open,setOpen]=useState(false);
+     //style={open?{display:'block'}:{display:'none'}}
       return(
           <div className="top-0 left-0 fixed w-full  " style={navBg}>
             <div className="md:flex items-center justify-between">
@@ -31,7 +32,7 @@ function Header(){
                  </svg>
               </div>
             </div>
-               <ul className="md:flex mr-10 p-5 transition-all duration-500 ease-in md:static" style={open?{display:'block'}:{display:'none'}} >
+               <ul className="md:flex mr-10 p-5 transition-all duration-500 ease-in md:static"   >
                      {
                        Links.map((link)=>(
                         <li key={link.name} className="md:ml-5 ml-10 "> 

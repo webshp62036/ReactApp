@@ -13,7 +13,7 @@ function Heros2(props){
     return(
         <div className="main-div">
             <div className="md:grid md:grid-cols-2 p-10">
-              <div className=" md:ml-32  md:p-10 md:w-1/ p-2">
+              <div className=" md:ml-32  md:p-10 md:w-1/2 p-2">
                   <img src={props.link} alt="heros" width="400" height="auto"/>
               </div>
               <div className=" items-center md:p-10 mt-5  md:w-1/2">
