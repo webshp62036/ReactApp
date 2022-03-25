@@ -54,6 +54,7 @@ const AboutBelieve=[
        <div>
          <div className="About">
              <Header/>
+             
              <Heros1 title={firstHeros[0].title} content={firstHeros[0].content} link={firstHeros[0].image}/>
              <div className="mission-vision-card w-full border-dotted border-b-2 border-blue-500" style={bgColor}>
                <div className="md:p-20 p-5 md:flex justify-center">
