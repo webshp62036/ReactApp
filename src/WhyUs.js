@@ -1,5 +1,5 @@
-function Contact(){
+function WhyUs(){
     return(
         <p>Contact Us !!!</p>
     )
-}export default Contact;
+}export default WhyUs;

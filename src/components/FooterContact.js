@@ -6,7 +6,7 @@ function FooterContact(){
     }
     const buttonColor={
         background: 'rgba(3, 44, 87, 1)',
-        poostion:'absolute',
+        
        
        
     }
@@ -16,7 +16,7 @@ function FooterContact(){
            <div className="w-full p-5 md:p-10  border-dotted border-t-4" style={bgColor}>
                <h1 className="text-xl font-[Poppins] tracking-wide font-bold text-center" style={{color:'rgba(242, 100, 25, 1)'}}>Got a business idea? </h1>
                 <p className="font-[Poppins] text-sm text-center">Get to market faster with Stackmybiz. </p>
-              <div className="items-center justify-center ">
+              <div className=" ">
                  <Button text="Contact Us" style={buttonColor}/>
              </div>
            </div>

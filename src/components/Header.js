@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 function Header(){
         const navBg={
@@ -10,12 +11,12 @@ function Header(){
       }
         // nav links
       let Links=[
-          {name:"About Us",link:"/about_us"},
-          {name:"Services",link:"/services"},
-          {name:"Packages",link:"/packages"},
-          {name:"Why Us",link:"/why_us"},
+          {name:"About Us",link:"/about"},
+          {name:"Services",link:"/service"},
+          {name:"Packages",link:"/package"},
+          {name:"Why Us",link:"/whyus"},
           {name:"Blogs",link:"/blogs"},
-          {name:"Careers",link:"Careers"},
+          {name:"Careers",link:"careers"},
         ];
       let[open,setOpen]=useState(false);
      //style={open?{display:'block'}:{display:'none'}}
@@ -36,7 +37,7 @@ function Header(){
                      {
                        Links.map((link)=>(
                         <li key={link.name} className="md:ml-5 ml-10 "> 
-                            <a href={link.link} className="cursor-pointer text-gray-600 font-[Poppins] hover:text-zinc-900">{link.name}</a>
+                            <Link to={link.link} className="cursor-pointer text-gray-600 font-[Poppins] hover:text-zinc-900">{link.name}</Link>
                         </li>
                        ))
                      }
