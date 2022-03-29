@@ -4,7 +4,10 @@ import Header from "./components/Header";
 import Heros1 from "./components/Heros1";
 import Dot from "./components/Dot";
 import {useState } from "react";
-
+import Benefits from "./components/Benefits";
+import CloudServiceCard from "./components/CloudServiceCard";
+import Button from "./components/Button";
+import Footer from "./components/Footer";
 
 
 function Services(){
@@ -57,8 +60,55 @@ function Services(){
         "image":"/Images/Lower-cost.png",
         "content":"Use cloud services to save costs on expensive server equipment, desktops, and licences, as well as time-consuming setups and extensive maintenance. Bring down the total cost of ownership, while improving product performance and efficiency. Maintain, scale, and upgrade your IT infrastructure, even when migrating from traditional on-premises hardware to the cloud. No upfront hardware and software purchases. (CAPEX) Reduced spending on storage, networking, and security. Reductions in operational costs, maintenance, and upgrade expenses. Reduction in operation-oriented personnel."
      };
-
-
+    const CloudExperties={
+         "title":"Our Cloud Expertise ",
+         "image":"/Images/Cloud-expertise.png",
+         "content":" Cloud infrastructure can be simple, yet challenging. From product development to launches to mergers, there is a broad spectrum of use cases wherein cloud services can be very useful.  We offer flexible, robust, agile, and scalable cloud solutions. Since every use case needs a different execution strategy, we help you put the best foot forward to enable the right cloud solutions for your business. We’ve helped businesses adapt to the cloud effectively on platforms such as AWS, Azure, and Google Cloud.  We also offer fully automated DevOps services by bringing business, development, and operation teams together."
+    }
+    /* cards data  start */
+     const AWS={
+          "title":"Amazon Web Services",
+          "image":"/Images/icons/Aws-logo.png"
+        };
+      const AWS_services=[
+                     "AWS Strategy & Consulting",
+                     "Managed AWS Operations",
+                     "Automation & Optimization",
+                      "Enterprise Data Platform"
+                     ];
+      const bgColor1={
+         background:'rgba(255, 190, 157, 1)',
+        };
+      const bgColor2={
+         background:'white',
+      };
+   //###### Google Cloud ##### //
+   const Google={
+      "title":"Microsoft Azure",
+      "image":"/Images/icons/Microsoft-azure.png "
+   };
+   const Google_services=[
+       "GCP Strategy & Consulting",
+      "Managed GCP Operations",
+      "Enterprise Data Platform",
+      "Migration to Google Cloud Platform"
+      ];
+   // ##### Microsoft Cloud #####/
+   const Microsoft={
+       "title":"Google Cloud",
+       "image":"/Images/icons/Google-cloud.png"
+   }
+   const Microsoft_services=[
+      "Azure Installation & Configuration",
+      "Migration to MS Azure",
+      "Azure Customization & Branding",
+      "CustomAzure Development"];
+    /* cards data end */
+   const buttonColor = {
+      background: 'rgba(3, 44, 87, 1)',
+      borderRadius: "2"
+    }
+  
     return(
         <div className="Services">
          <section className="Header-section">
@@ -91,28 +141,64 @@ function Services(){
       {/*Testimonial section end */}
       {/*Why Cloud section start */}
       <section className="Why-Cloud-section md:p-20 p-5">
-          <div className="title font-[Poppins] text-center" >
+          <div className="title font-[Poppins] text-center md:p-10" >
               <h1 className="font-bold text-2xl">Why Use the Cloud?</h1>
               <p>Cloud computing provides improved agility, increased performance, and faster time to market <br/>for software development.</p>
           </div>
-          <div className="Banefits container ml-auto mr-auto ">
-              <h2 className="text-xl font-bold font-[Poppins] mt-5">Benefits</h2>
-              
+          <div className="Banefits container ml-auto mr-auto">
+              <h2 className="text-2xl font-bold font-[Poppins] md:p-10">Benefits</h2>
+             <div className="Banefits-list mt-10">
+              <div className="Scalable  ">
+                 <Benefits Data={Banefit1} style={{background:'white',color:'rgba(255, 181, 115, 1)',}}/>
+             </div>
               <div className="Scalable">
-                 <Heros1 Data={Banefit1}/>
+                 <Benefits Data={Banefit2}  style={{background:'white',color:'rgba(255, 114, 94, 1)',}} />
               </div>
               <div className="Scalable">
-                 <Heros1 Data={Banefit2} />
+                 <Benefits Data={Banefit3} style={{background:'white',color:'rgba(64, 123, 255, 1)',}}/>
               </div>
               <div className="Scalable">
-                 <Heros1 Data={Banefit3} />
+                 <Benefits Data={Banefit4} style={{background:'white',color:'rgba(75, 154, 236, 1)',}}/>
               </div>
-              <div className="Scalable">
-                 <Heros1 Data={Banefit4} />
-              </div>
+            </div>
           </div>
       </section>
-
+      <section className="Cloud-Expertise">
+         <div className="ml-auto mr-auto md:p-10 p-5 border-dotted border-t-4 border-b-4 border-gray-200 " style={{background:'rgba(248, 251, 255, 1)'}}>
+           <Heros1 Data={CloudExperties}/>
+         </div>
+      </section>
+      <section className="Cloud-technology p-5 md:p-20 ">
+         <div className="title text-center font-[Poppins]">
+            <h1 className="text-xl font-bold ">Cloud Technologies We Offer</h1>
+            <p >Our cloud services are flexible, scalable, and cost-efficient.</p>
+         </div>
+         <div className="cards md:flex justify-center">
+            
+              <CloudServiceCard Data={AWS} Services={AWS_services} ParentBg={bgColor1} ChildBg={bgColor2} style={{color:'white'}}/>
+              <CloudServiceCard Data={Microsoft} Services={Google_services} ParentBg={bgColor2} ChildBg={bgColor1} style={{color:'#FF725E'}}/>
+              <CloudServiceCard Data={Google} Services={Microsoft_services} ParentBg={bgColor2} ChildBg={bgColor1} style={{color:'#FF725E'}}/>
+        
+         </div>
+      </section>
+      <section className="about-expert border-t-4 border-dotted border-gray-200 " style={{ background: 'rgba(248, 251, 255, 1)' }}>
+        <div className="md:grid md:grid-cols-2 container md:p-20 p-5 ml-auto mr-auto" >
+          <div className="image  ">
+            <img src="/Images/expert.png" alt="expert" className="" />
+          </div>
+          <div className=" md:mt-auto md:mb-auto ">
+            <div className="content">
+              <h1 className="font-[Poppins] font-bold text-lg">Ready to start a Project?</h1>
+            </div>
+            <div className="button mt-3 mr-auto ml-auto ">
+              <Button text="Let's get in touch" style={buttonColor} />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="Footer">
+         <Footer/>
+      </section>
     </div>
- );
+);
 }export default Services;
