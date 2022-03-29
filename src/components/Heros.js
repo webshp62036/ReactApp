@@ -6,7 +6,8 @@ function Heros(props){
     }
     const buttonBg={
         background:'rgba(4, 66, 132, 1)',
-        textAlign:'center'
+        textAlign:'center',
+        marginLeft:"0",
     }
     return(
            <div className=" md:flex justify-center md:mt-22 py-20" style={bgcolor}>
