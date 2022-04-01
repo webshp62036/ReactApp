@@ -138,5 +138,5 @@ function About() {
         <Footer />
       </section>
     </div>
-  )
+  );
 } export default About;
