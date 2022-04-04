@@ -5,10 +5,7 @@ function FooterContact(){
         background:'rgba(248, 251, 255, 1)'
     }
     const buttonColor={
-        background: 'rgba(3, 44, 87, 1)',
-        
-       
-       
+      background:'rgba(3, 44, 87, 1)',
     }
 
      return(

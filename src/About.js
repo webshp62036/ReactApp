@@ -59,14 +59,12 @@ function About() {
     "about": "Amit comes with 16+ years of experience in Information Technology. He is a Software Engineer, graduated from the Cochin University of Science and Technology. He has spent many years working with Accord & Samsung. Amit is an effective mentor who takes the initiative of guiding individuals towards their goals.  He has the ability to balance strategic and software thinking with operational implementation and execution. He builds sustainable relationships with customers, partners, and employees, and strives to create a holistic ecosystem of technical resources. He ensures quality development and optimizes resources for efficiency and scalability. Amit likes to learn about the different cultures of the world in his free time.",
     "quote": "His Mantra is - Believe in Innovation and Endeavour to reach new horizons. "
   };
-
-  const icons = {
+const icons = {
     "facebook": "/Images/icons/facebook.png",
     "twitter": "/Images/icons/twitter.png",
     "linkedin": "/Images/icons/linkedin.png"
   };
-
-  const rakesh = {
+const rakesh = {
     "image": "https://ca.slack-edge.com/TTAGUFCUF-USVTS996W-89a446887920-512",
     "name": "Rakesh Kumar ",
     "desination": "Co-founder & Chief Operating Officer",
@@ -74,14 +72,12 @@ function About() {
     "quote": " His Mantra is - Imagination is the true magic carpet.",
   };
   /* Team Card end */
-
-  /* Footer Contact start */
+ /* Footer Contact start */
   const buttonColor = {
     background: 'rgba(3, 44, 87, 1)',
     borderRadius: "2"
   }
-
-  /* Footer Contact end */
+ /* Footer Contact end */
   return (
     <div>
       <div className="About">

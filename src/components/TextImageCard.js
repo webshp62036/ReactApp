@@ -15,7 +15,7 @@ function TextImageCard(props){
                 <p className="font-[Poppins]">{content}</p>
             </div>
     </div>
-)
+);
 }export default TextImageCard;
 
 
